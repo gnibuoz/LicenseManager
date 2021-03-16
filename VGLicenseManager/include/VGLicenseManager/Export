@@ -1,0 +1,10 @@
+#pragma once
+/** 
+ * dll export definition
+ */
+
+#ifdef VG_LICENSE_MANAGER_LIB
+#define VG_LICENSE_MANAGER_API __declspec(dllexport)
+#else
+#define VG_LICENSE_MANAGER_API __declspec(dllimport)
+#endif
